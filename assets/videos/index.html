@@ -56,38 +56,26 @@
       </div>
     </nav>
     <div class='container-fluid'>
-      <section class='the-list-of-videos container'>
+      <section class='container'>
         <img id='logo' src="../images/logo.png" alt="Tony Brown logo" />
         <h1 class='jumboHeading'>Chad's Viral Videos Emborium.</h1>
-      <section class='the-submit-video-form col-md-4'>
-        <h3>See something missing?</h3>
-        <form>
-          <input type="text" name="title" class='form-control' id="title" placeholder="e.g. My Video Title" />
-          <input type="text" name="src" class='form-control' id="src" placeholder='https://www.youtube.com/watch?v=5O434MiRBoY' />
-          <button class='btn btn-success' type="button">Submit Video</button>
-        </form>
-      </section>
-        <ul class='list-unstyled'>
-          <li>
-          <h2>Led Zeppelin</h2>
-          <iframe width="853" height="480" src="https://www.youtube.com/embed/9Q7Vr3yQYWQ" frameborder="0" allowfullscreen></iframe>
-          </li>
-          <li>
-          <h2>Rolling Stones</h2>
-          <iframe width="853" height="480" src="https://www.youtube.com/embed/AsWR0CTWazQ" frameborder="0" allowfullscreen></iframe>
-          </li>
-          <li>
-          <h2>PSY - Gangnam style M/V</h2>
-          <iframe width='853' height='480' src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen>
-          </iframe>
-          </li>
-          <li>
-          <h2>Justin Bieber</h2>
-          <iframe width="853" height="480" src="https://www.youtube.com/embed/JC2yu2a9sHk" frameborder="0" allowfullscreen></iframe>
-          </li>
-        </ul>
-      </section>
-    </div>
+        <section class='the-submit-video-form col-md-4'>
+          <h3>See something missing?</h3>
+          <form>
+            <input type="text" name="title" class='form-control' id="title" placeholder="e.g. My Video Title" />
+            <input type="text" name="src" class='form-control' id="src" placeholder='https://www.youtube.com/watch?v=5O434MiRBoY' />
+            <button class='btn btn-success' type="button">Submit Video</button>
+          </form>
+        </section>
+        <!-- LIST OF VIDEOS -->
+        <section class='the-list-of-videos col-md-12'>
+          <div class='loading'>Loading videos...</div>
+          <ul>
+            <!-- VIDEO DATA INSERTED HERE AS HTML -->
+          </ul>
+        </section>
+      </section><!-- end .container -->
+    </div><!-- end .container-fluid -->
     <!--
       Client-side Templates
       ========================
