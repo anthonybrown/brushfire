@@ -27,18 +27,44 @@
               + Import stylesheets from other directories
               + Use a different or additional preprocessor, like SASS, SCSS or Stylus
       -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
     <!--STYLES-->
+    <link rel='stylesheet' href='/styles/bootstrap.min.css'>
+    <link rel='stylesheet' href='/styles/custom.css'>
     <link rel="stylesheet" href="/styles/importer.css">
-    <link rel="stylesheet" href="/styles/custom.css">
+
     <!--STYLES END-->
   </head>
 
-  <body style='background: url(images/bkgd_seaScene.png) no-repeat 0 780px;'>
-    <img src="images/logo.png" alt="Sails.js logo" />
-    <div id='wrap'>
-      <h1 class='jumboHeading'>Chad's Viral Videos Emborium.</h1>
-      <h2>Click  <a href="/videos/index.html">here</a>, for the latest round of videos! </h2>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/#">Brushfire</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/#">Home</a></li>
+            <li><a href="/videos">Videos</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class='container-fluid'>
+      <div class='container'>
+        <div class='jumbotron'>
+          <img id='logo' src="images/logo.png" alt="Sails.js logo" />
+          <h1 class='jumboHeading'>Chad's Viral Videos Emborium.</h1>
+          <h2>Click  <a href="/videos/index.html">here</a>, for the latest round of videos! </h2>
+        </div>
+      </div>
     </div>
     <!--
       Client-side Templates
